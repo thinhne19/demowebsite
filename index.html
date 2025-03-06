@@ -3,266 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Studio | Đẳng cấp thời trang</title>
+    <title>Trang Cá Nhân</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-circle"></div>
-            <h2>Luxe Studio</h2>
-        </div>
-    </div>
-
     <header>
-        <div class="logo">
-            <h1>Luxe Studio</h1>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#home" class="active">Trang chủ</a></li>
-                <li><a href="#collection">Bộ sưu tập</a></li>
-                <li><a href="#about">Về chúng tôi</a></li>
-                <li><a href="#lookbook">Lookbook</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
-        <div class="header-icons">
-            <a href="#"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="container">
+            <h1>Trang Cá Nhân</h1>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="animate-text">Đẳng cấp thời trang</h1>
-                <p class="animate-text delay-1">Khám phá bộ sưu tập mới nhất 2025</p>
-                <a href="#collection" class="btn animate-text delay-2">Xem ngay</a>
-            </div>
-            <div class="hero-image">
-                <div class="image-container animate-image">
-                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=800&auto=format&fit=crop" alt="Thời trang cao cấp">
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img id="avatar" src="https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.6435-9/162576389_767558500812581_9088419689009312288_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE9JDL-dmRlFKV8_QDLYhySBbjmjG6jVm8FuOaMbqNWbyBHUFPrIIijSp-fGU3oTwnpCYt0_uDAkoHg_mTU_Y8Y&_nc_ohc=81Swtg8j3-cQ7kNvgGofbHl&_nc_oc=Adjoehx-vZL1oDPtIaD0WDaRzP3p5pWUGD48L4wZcXVXoNj-CzN-ZjSeZkVIa1w9ChZtz12JPTXx3N2YziKxiJ5i&_nc_zt=23&_nc_ht=scontent.fsgn5-1.fna&_nc_gid=A-ffmGrXo1Aix4mBEm9cvC4&oh=00_AYC4FcnyU2xLLFMUUlsvhY6iogCAuLH2wrx47ULRjtNXWw&oe=67F09638" alt="Ảnh đại diện">
+                <div class="edit-icon" onclick="openImageModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
                 </div>
             </div>
-        </section>
+            <h1 class="name editable" id="fullName" onclick="editText('fullName')">Nguyễn Lê Đức Thịnh</h1>
+            <p class="title editable" id="jobTitle" onclick="editText('jobTitle')">Sinh Viên / Đam Mê Công Nghệ</p>
+            
+            <div class="social-icons">
+                <a href="#" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+        </div>
 
-        <section id="featured" class="featured">
-            <div class="section-header">
-                <h2>Sản phẩm nổi bật</h2>
-                <p>Lựa chọn tốt nhất từ bộ sưu tập của chúng tôi</p>
-            </div>
-            <div class="featured-grid">
-                <div class="featured-item" data-aos="fade-up">
-                    <div class="featured-image">
-                        <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=400&h=500&auto=format&fit=crop" alt="Sản phẩm 1">
-                        <div class="featured-overlay">
-                            <a href="#" class="btn-small">Xem chi tiết</a>
-                        </div>
-                    </div>
-                    <div class="featured-info">
-                        <h3>Váy dạ hội Elegance</h3>
-                        <p class="price">3.900.000 đ</p>
-                    </div>
+        <div class="card">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                Thông Tin Cá Nhân
+            </h2>
+            <div class="card-content">
+                <div class="info-item">
+                    <div class="info-label">Ngày sinh:</div>
+                    <div class="info-value editable" id="birthday" onclick="editText('birthday')">19/12/2003</div>
                 </div>
-                <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="featured-image">
-                        <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=400&h=500&auto=format&fit=crop" alt="Sản phẩm 2">
-                        <div class="featured-overlay">
-                            <a href="#" class="btn-small">Xem chi tiết</a>
-                        </div>
-                    </div>
-                    <div class="featured-info">
-                        <h3>Áo khoác Premiere</h3>
-                        <p class="price">4.500.000 đ</p>
-                    </div>
+                <div class="info-item">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value editable" id="email" onclick="editText('email')">thinhne19122003@gmail.com</div>
                 </div>
-                <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="featured-image">
-                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&h=500&auto=format&fit=crop" alt="Sản phẩm 3">
-                        <div class="featured-overlay">
-                            <a href="#" class="btn-small">Xem chi tiết</a>
-                        </div>
-                    </div>
-                    <div class="featured-info">
-                        <h3>Túi xách Luxuria</h3>
-                        <p class="price">5.200.000 đ</p>
-                    </div>
+                <div class="info-item">
+                    <div class="info-label">Số điện thoại:</div>
+                    <div class="info-value editable" id="phone" onclick="editText('phone')">0123 456 789</div>
                 </div>
-            </div>
-        </section>
-
-        <section id="collection" class="collection">
-            <div class="parallax-container">
-                <div class="parallax-content">
-                    <h2>Bộ sưu tập mùa xuân</h2>
-                    <p>Tươi mới, tinh tế và đầy cảm hứng</p>
-                    <a href="#" class="btn">Khám phá ngay</a>
+                <div class="info-item">
+                    <div class="info-label">Địa chỉ:</div>
+                    <div class="info-value editable" id="address" onclick="editText('address')">123 Đường ABC, Quận XYZ, Thành phố HCM</div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Về Luxe Studio</h2>
-                    <p>Luxe Studio là thương hiệu thời trang cao cấp hàng đầu tại Việt Nam, chuyên thiết kế và sản xuất những bộ sưu tập độc đáo, sang trọng và tinh tế.</p>
-                    <p>Chúng tôi tin rằng thời trang không chỉ là cách bạn ăn mặc, mà còn là cách bạn thể hiện cá tính và phong cách sống.</p>
-                    <a href="#" class="btn btn-outline">Tìm hiểu thêm</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&h=600&auto=format&fit=crop" alt="Về chúng tôi">
-                </div>
-            </div>
-        </section>
-
-        <section id="lookbook" class="lookbook">
-            <div class="section-header">
-                <h2>Lookbook 2025</h2>
-                <p>Khám phá phong cách mới nhất</p>
-            </div>
-            <div class="lookbook-gallery">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=700&auto=format&fit=crop" alt="Lookbook 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?w=600&h=700&auto=format&fit=crop" alt="Lookbook 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&h=700&auto=format&fit=crop" alt="Lookbook 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=700&auto=format&fit=crop" alt="Lookbook 4">
-                </div>
-            </div>
-        </section>
-
-        <section id="newsletter" class="newsletter">
-            <div class="newsletter-content">
-                <h2>Đăng ký nhận thông tin</h2>
-                <p>Nhận thông tin về bộ sưu tập mới và ưu đãi đặc biệt</p>
-                <form id="newsletter-form">
-                    <input type="email" placeholder="Địa chỉ email của bạn" required>
-                    <button type="submit" class="btn">Đăng ký</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="section-header">
-                <h2>Liên hệ với chúng tôi</h2>
-                <p>Chúng tôi luôn sẵn sàng lắng nghe bạn</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Địa chỉ</h3>
-                            <p>123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Điện thoại</h3>
-                            <p>+84 123 456 789</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>info@luxestudio.vn</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Giờ mở cửa</h3>
-                            <p>Thứ Hai - Chủ Nhật: 9:00 - 21:00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Họ và tên" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Số điện thoại">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Tin nhắn" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Gửi tin nhắn</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>Luxe Studio</h2>
-                <p>Đẳng cấp thời trang</p>
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>Danh mục</h3>
-                    <ul>
-                        <li><a href="#">Nữ</a></li>
-                        <li><a href="#">Nam</a></li>
-                        <li><a href="#">Phụ kiện</a></li>
-                        <li><a href="#">Bộ sưu tập</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Thông tin</h3>
-                    <ul>
-                        <li><a href="#">Về chúng tôi</a></li>
-                        <li><a href="#">Cửa hàng</a></li>
-                        <li><a href="#">Tuyển dụng</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Hỗ trợ</h3>
-                    <ul>
-                        <li><a href="#">Đổi trả</a></li>
-                        <li><a href="#">Vận chuyển</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-social">
-                <h3>Kết nối với chúng tôi</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="info-item">
+                    <div class="info-label">Giới thiệu:</div>
+                    <div class="info-value editable" id="bio" onclick="editText('bio')">Xin chào! Tôi là một người đam mê công nghệ và luôn tìm tòi những điều mới mẻ. Tôi thích phát triển bản thân và học hỏi các kỹ năng mới. Trong thời gian rảnh, tôi thích đọc sách, nghe nhạc và đi du lịch khám phá những địa điểm mới.</div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Luxe Studio. Tất cả quyền được bảo lưu.</p>
+
+        <div class="card">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Học Vấn & Kinh Nghiệm
+            </h2>
+            <div class="card-content editable" id="education" onclick="editText('education')">
+                <p><strong>2021 - 2025</strong> - Đại học Hutech, Chuyên ngành Công Nghệ Phần Mềm</p>
+                <p><strong>2025 - Hiện tại</strong> - Làm việc tại Công ty Posch với vị trí Thực tập sinh Phát triển Ứng Dụng Mobie</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                Kỹ Năng
+            </h2>
+            <div class="card-content">
+                <div>
+                    <p>React Native & Flutter</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>JavaScript</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Python</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Thiết kế đồ họa</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <span class="skill">Web Design</span>
+                    <span class="skill">UI/UX</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">Firebase</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Photoshop</span>
+                    <span class="skill">Illustrator</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Bộ Sưu Tập Ảnh
+            </h2>
+            <div class="card-content">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-7.fna.fbcdn.net/v/t39.30808-6/294532318_1080723996162695_9210488096858300348_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeELf08e8-vSja0WL9ZYn3uhCVCX1GP8SaMJUJfUY_xJo9nXO9FhhD6vHVw5x5JY4gL6Vkftn8Tny0ZM-SqaDd_U&_nc_ohc=NGZ3N2KeDigQ7kNvgHv3t5L&_nc_oc=AdjN1sw40XVxQdZe3fEgvgP0gds0kMprhpwdeiZ0gusB9jPvkCQcwPX8xkRqYtmqrtlEDsQiuAIfbuRxogq41OUa&_nc_zt=23&_nc_ht=scontent.fsgn5-7.fna&_nc_gid=APKsMZzFkxeMl9kuHiiwoly&oh=00_AYC3fEO8UlqfH03tttn53DeT99bfi3INbm75rs36dQyCcg&oe=67CEF83C" alt="Gallery item 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t39.30808-6/426830295_1437780917123666_6547828807332580235_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFLhkFATCAevxK0uMS9C5YCgqh5eyVPpfWCqHl7JU-l9ZmeeNnZ4UknnL3cVhBW61n8Of2OvwMrg-z-zFsS0KZV&_nc_ohc=aFTU5ruQXIoQ7kNvgH2N6u4&_nc_oc=AdjD-hqC49tZl3xFXGcrwvWZ5PYA_IcMyYSIMLf3d1_MIyArp3025PmDlqMFdm9-dIXVhX4qHzZoEvNLfuxeHqM-&_nc_zt=23&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=AZQgC1_OVBjh4SIeNOgvPI7&oh=00_AYD6qPVzKfC6N2g4HMLIdwhraF6F4_02LsA7Aw6RKevyWg&oe=67CF03B3" alt="Gallery item 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-6/426870980_1437780933790331_8819883668227855979_n.jpg?stp=dst-jpg_p350x350_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEgkP31xZInJHpfPj7sQVxCe06MSw2tRZJ7ToxLDa1FkpdeaEneUTUSRV3RmzwsDphITyHtQnQkSnND1fGHcE0F&_nc_ohc=esEUUXKWtxkQ7kNvgGyRCLW&_nc_oc=Adh4VXESohpZ6Gd_dApcKvtN9D_r01ntHZoS1VxnI1kpzcy2-JCu1roEppJzHPCIM4RSb-GkMKtlwKtJ41EXN7dJ&_nc_zt=23&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=A0jowjr-uOGqDbEM22j-nYc&oh=00_AYA-7uQPaBV9k-90nTVjclQOp_631n7ShUx1dLirhy9vXw&oe=67CEFAA8" alt="Gallery item 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t39.30808-6/476825662_607367658669797_4869680685478021625_n.jpg?stp=dst-jpg_p600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFbLPx4iM1GUoz9R9pu1afFoGvaAlnsiSWga9oCWeyJJYatldgMiDErvAuhAeNenmgLEOt4i2mK3G8QdSGZL70B&_nc_ohc=514n9d6HlCsQ7kNvgEDhb-o&_nc_oc=AdiWDwqquADEf8LWnf87fHI5exxDAST35TzI4r4fo8KOgp2tuj-RgH6Gut3NGrHnbzuAjgdaWThNVW2jEe0PcyHd&_nc_zt=23&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=AFcS6kfs9qv9Z9rDjQkOrSU&oh=00_AYDpUEEr3ASfZWO6ALYxHKSRwjJp9LuTzUOCNDBcJaIETw&oe=67CEE737" alt="Gallery item 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-7.fna.fbcdn.net/v/t39.30808-6/474040362_1660930284808727_7312176035821573106_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGFeqZxIu3E7FAhu6L6QmgidLYgp-MNNoF0tiCn4w02gehBRSbjLfk9MSlhOV3nM7YNqyGQTlJnbhSu_l88hbzc&_nc_ohc=lM2cyDyRajMQ7kNvgEx90RS&_nc_oc=AdiwxxLoVJ5pCkGz1z-JNWEIG8qla0Ni-YQNQetSv0Q3Iuxd151VdsaFGN8vWbe1Tvd7EQUDDzrETBBb_SVcFAcu&_nc_zt=23&_nc_ht=scontent.fsgn5-7.fna&_nc_gid=A6kFyTS2N9Sj_dTP7qKSuqW&oh=00_AYAeidxYiffQrRUzm4_vP5d4nCepbWuY3QLEQZp57nbzJg&oe=67CEF709" alt="Gallery item 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.6435-9/101690687_556563598578740_1174527517978001408_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEgZJRdmJpEOBT7vAPMpwbXt-PsBCkXnq634-wEKReerm4IVMwbVmLbZ0m_LdPxHGjQS2lGuE0eHG9QV-F-O6rm&_nc_ohc=xp091qniRwUQ7kNvgG5_zBh&_nc_oc=Adi7XqOnvyWHVuCBaRk64BCEmpWTjUDqu5e2SMK3qyya_zZP5Dfc0PfB-YapSQKkabWhxMSe8o5EB7YTTIxRIRgu&_nc_zt=23&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=A6kFyTS2N9Sj_dTP7qKSuqW&oh=00_AYAMCDBBFilgcXCdOFzdG0RjA8z-HlhNkoH4itB1JAbTtw&oe=67F07AF1" alt="Gallery item 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Sở Thích & Mục Tiêu
+            </h2>
+            <div class="card-content">
+                <div class="info-item">
+                    <div class="info-label">Sở thích:</div>
+                    <div class="info-value editable" id="hobbies" onclick="editText('hobbies')">Đọc sách, Nghe nhạc, Đi du lịch, Chơi game, Lập trình, Nhiếp ảnh</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Mục tiêu:</div>
+                    <div class="info-value editable" id="goals" onclick="editText('goals')">Trở thành một Full-stack Developer xuất sắc, Tự học thêm về AI và Machine Learning, Cải thiện kỹ năng ngoại ngữ, Xây dựng ít nhất 3 dự án cá nhân trong năm nay</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="toggleEditMode()">Chỉnh Sửa Thông Tin</button>
+    </div>
+
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 - Trang cá nhân của tôi. Được thiết kế với <span class="heart">❤</span></p>
         </div>
     </footer>
 
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <h2>Chỉnh Sửa Thông Tin</h2>
+            <div class="form-group">
+                <label for="editField">Nội dung:</label>
+                <textarea id="editField" rows="4"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button class="btn btn-cancel" onclick="closeModal()">Hủy</button>
+                <button class="btn" onclick="saveEdit()">Lưu</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <h2>Thay Đổi Ảnh</h2>
+            <div class="form-group">
+                <label for="imageUrl">URL Ảnh:</label>
+                <input type="text" id="imageUrl" placeholder="Nhập URL ảnh của bạn">
+            </div>
+            <div class="form-buttons">
+                <button class="btn btn-cancel" onclick="closeImageModal()">Hủy</button>
+                <button class="btn" onclick="saveImage()">Lưu</button>
+            </div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
+
 </body>
 </html>
